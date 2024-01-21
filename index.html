@@ -20,7 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -134,12 +135,13 @@
         </section>
         <!-- Super clients section -->
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
             <div class="flex items-center lg:pr-28">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>Clients</h2>
                     <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the
-                        majorityhave suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        majorityhave suffered alteration in some form, by injected humour, or randomised words which
+                        don't look even slightly believable.
                     </p>
                     <button class="btn btn-primary">Show All</button>
                 </div>
@@ -185,10 +187,60 @@
             </div>
         </section>
 
+        <!-- News & events section -->
+        <section>
+
+        </section>
+
     </main>
 
-    <footer>
-
+    <footer class="p-10 lg:px-48 bg-base-200 text-base-content">
+        <div class="flex justify-between items-center my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get strated?</span>
+                <button class="btn btn-primary ml-5">Get Strated</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="footer-title">Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com" class="py-4 px-1 bg-transparent border-b-2 border-[#494949] outline-none" />
+                        <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end rounded-full">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="mt-10 text-center">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
     </footer>
 
 </body>
